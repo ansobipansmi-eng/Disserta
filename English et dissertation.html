@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours – Anglais & Dissertation</title>
+<style>
+  /* --- STYLE GLOBAL --- */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url('Écran.png') center/cover no-repeat fixed;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(50,50,50,0.7);
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  button {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #00bfa5;
+  }
+
+  .content {
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px;
+    min-height: 70vh;
+  }
+
+  section {
+    display: none;
+    animation: fadeIn 0.6s ease;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+  }
+
+  th, td {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  h2 {
+    color: #ffcb2d;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  @media (max-width: 700px) {
+    table, th, td {font-size: 14px;}
+    header h1 {font-size: 22px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📚 English & French Studies</h1>
+</header>
+
+<nav id="menu">
+  <button onclick="showSection('english')">Cours d'Anglais</button>
+  <button onclick="showSection('dissertation')">Dissertation Française</button>
+</nav>
+
+<div class="content">
+  <!-- Section Anglais -->
+  <section id="english" class="active">
+    <h2>🗣️ Conversations Anglaises</h2>
+    <p>Apprends des phrases utiles de la vie quotidienne avec traduction française.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Anglais</th>
+          <th>Français</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hello! How are you?</td><td>Bonjour ! Comment vas-tu ?</td></tr>
+        <tr><td>I'm fine, thank you.</td><td>Je vais bien, merci.</td></tr>
+        <tr><td>What's your name?</td><td>Comment t'appelles-tu ?</td></tr>
+        <tr><td>My name is Alex.</td><td>Je m'appelle Alex.</td></tr>
+        <tr><td>Where are you from?</td><td>D'où viens-tu ?</td></tr>
+        <tr><td>I'm from Cameroon.</td><td>Je viens du Cameroun.</td></tr>
+        <tr><td>Can you help me?</td><td>Peux-tu m'aider ?</td></tr>
+        <tr><td>Yes, of course!</td><td>Oui, bien sûr !</td></tr>
+        <tr><td>What time is it?</td><td>Quelle heure est-il ?</td></tr>
+        <tr><td>It's five o'clock.</td><td>Il est cinq heures.</td></tr>
+        <tr><td>Where do you live?</td><td>Où habites-tu ?</td></tr>
+<tr><td>I live in Yaoundé.</td><td>J'habite à Yaoundé.</td></tr>
+<tr><td>Do you speak English?</td><td>Parles-tu anglais ?</td></tr>
+<tr><td>Yes, a little bit.</td><td>Oui, un petit peu.</td></tr>
+<tr><td>What do you do?</td><td>Que fais-tu dans la vie ?</td></tr>
+<tr><td>I'm a student.</td><td>Je suis étudiant.</td></tr>
+<tr><td>What are you studying?</td><td>Qu'est-ce que tu étudies ?</td></tr>
+<tr><td>I study computer science.</td><td>J'étudie l'informatique.</td></tr>
+<tr><td>What time do you wake up?</td><td>À quelle heure te réveilles-tu ?</td></tr>
+<tr><td>I wake up at seven.</td><td>Je me réveille à sept heures.</td></tr>
+
+<tr><td>Do you like coffee?</td><td>Aimes-tu le café ?</td></tr>
+<tr><td>Yes, I like coffee very much.</td><td>Oui, j'aime beaucoup le café.</td></tr>
+<tr><td>Do you have any brothers or sisters?</td><td>As-tu des frères ou des sœurs ?</td></tr>
+<tr><td>I have one brother and one sister.</td><td>J'ai un frère et une sœur.</td></tr>
+<tr><td>What is your favorite color?</td><td>Quelle est ta couleur préférée ?</td></tr>
+<tr><td>My favorite color is blue.</td><td>Ma couleur préférée est le bleu.</td></tr>
+<tr><td>How do you go to school?</td><td>Comment vas-tu à l'école ?</td></tr>
+<tr><td>I go by bus.</td><td>Je vais en bus.</td></tr>
+<tr><td>What do you like to do in your free time?</td><td>Qu'aimes-tu faire pendant ton temps libre ?</td></tr>
+<tr><td>I like reading and listening to music.</td><td>J'aime lire et écouter de la musique.</td></tr>
+
+<tr><td>Do you like sports?</td><td>Aimes-tu le sport ?</td></tr>
+<tr><td>Yes, I play football.</td><td>Oui, je joue au football.</td></tr>
+<tr><td>What's your favorite food?</td><td>Quel est ton plat préféré ?</td></tr>
+<tr><td>I love rice and chicken.</td><td>J'adore le riz et le poulet.</td></tr>
+<tr><td>Are you married?</td><td>Es-tu marié ?</td></tr>
+<tr><td>No, I'm single.</td><td>Non, je suis célibataire.</td></tr>
+<tr><td>What day is it today?</td><td>Quel jour sommes-nous ?</td></tr>
+<tr><td>Today is Monday.</td><td>Nous sommes lundi.</td></tr>
+<tr><td>It is very hot today.</td><td>Il fait très chaud aujourd'hui.</td></tr>
+<tr><td>Yes, summer is here.</td><td>Oui, l'été est là.</td></tr>
+
+<tr><td>Do you like to travel?</td><td>Aimes-tu voyager ?</td></tr>
+<tr><td>Yes, I love traveling.</td><td>Oui, j'adore voyager.</td></tr>
+<tr><td>Where did you go last year?</td><td>Où es-tu allé l'année dernière ?</td></tr>
+<tr><td>I went to the beach.</td><td>Je suis allé à la plage.</td></tr>
+<tr><td>Did you enjoy it?</td><td>As-tu aimé ça ?</td></tr>
+<tr><td>Yes, it was amazing!</td><td>Oui, c'était génial !</td></tr>
+<tr><td>Can I sit here?</td><td>Puis-je m'asseoir ici ?</td></tr>
+<tr><td>Sure, no problem.</td><td>Bien sûr, aucun problème.</td></tr>
+<tr><td>Are you busy?</td><td>Es-tu occupé ?</td></tr>
+<tr><td>Yes, I have some work to do.</td><td>Oui, j'ai du travail à faire.</td></tr>
+
+<tr><td>What kind of music do you like?</td><td>Quel genre de musique aimes-tu ?</td></tr>
+<tr><td>I like pop and jazz.</td><td>J'aime la pop et le jazz.</td></tr>
+<tr><td>What's your favorite movie?</td><td>Quel est ton film préféré ?</td></tr>
+<tr><td>My favorite movie is Avatar.</td><td>Mon film préféré est Avatar.</td></tr>
+<tr><td>Do you like reading books?</td><td>Aimes-tu lire des livres ?</td></tr>
+<tr><td>Yes, especially novels.</td><td>Oui, surtout les romans.</td></tr>
+<tr><td>Where do you work?</td><td>Où travailles-tu ?</td></tr>
+<tr><td>I work in a hospital.</td><td>Je travaille dans un hôpital.</td></tr>
+<tr><td>Who is your best friend?</td><td>Qui est ton meilleur ami ?</td></tr>
+<tr><td>My best friend is James.</td><td>Mon meilleur ami est James.</td></tr>h
+        <!-- ICI → j'ajouterai les 190 autres conversations -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section Dissertation -->
+  <section id="dissertation">
+    <h2>✍️ La Dissertation Française</h2>
+    <p>Voici toutes les étapes et secrets pour réussir une bonne dissertation.</p>
+
+    <h3>⚙️ Étapes clés d'une dissertation :</h3>
+    <ul>
+      <li><b>1. Comprendre le sujet :</b> lis bien la consigne et les mots clés.</li>
+      <li><b>2. Analyser :</b> détermine la problématique centrale.</li>
+      <li><b>3. Trouver des arguments :</b> fais un brouillon d'idées avec exemples.</li>
+      <li><b>4. Faire un plan :</b> Introduction, Développement, Conclusion.</li>
+    </ul>
+
+    <h3>💡 Secrets d'une bonne dissertation :</h3>
+    <ul>
+      <li>Sois clair et structuré ;</li>
+      <li>Utilise des exemples précis ;</li>
+      <li>Lie bien les transitions ;</li>
+      <li>Choisis un vocabulaire riche et exact.</li>
+    </ul>
+
+    <h3>🪶 Structure recommandée :</h3>
+    <p><b>Introduction :</b> amène le sujet, pose la problématique, annonce le plan.</p>
+    <p><b>Développement :</b> deux ou trois parties équilibrées, chaque idée appuyée d'un exemple concret.</p>
+    <p><b>Conclusion :</b> fais une synthèse, réponds clairement à la question et ouvre sur une réflexion.</p>
+
+    <h3>🎓 Exemples de sujets :</h3>
+    <ul>
+      <li>La liberté est-elle compatible avec la société ?</li>
+      <li>Peut-on apprendre sans faire d'erreurs ?</li>
+      <li>La technologie rapproche-t-elle les hommes ?</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
